@@ -23,4 +23,4 @@ The SALSA algorithm is a link suggestion algorithm what was developed in the ear
 
 SALSA can be broken down into a couple steps. Firstly you do an egocentric random walk(PPR) around your query node. This alone is a good enough suggestion algorithm but they take it a step further. Now they run HITS algorthm on those nodes by treating them as Hub nodes then the Authority nodes are the nodes that the hub nodes point to. From there you do some linear algebra and then solve for eigen vectors and you have your suggested users.
 
-All of this has been implemented in TCS.ipynb . I still have some issues mainly having to do with nodes being connected in the HITS algorithm but for the most part this project is complete. 
+All of this has been implemented in lib/salsa.py and you can see an example usage in TCS_Salsa.ipynb
